@@ -1,0 +1,135 @@
+.gform_wrapper.donation_form_wrapper {
+  .field_sublabel_above {
+    height: auto;
+    margin-bottom: 0;
+  }
+  #field_1_15 .gfield_label,
+  .gfield_required,
+  .ginput_product_price_label {
+    display: none;
+  }
+  .top_label .gfield_label {
+    font-size: 0.875em;
+    font-weight: 400;
+    margin: 0.75em 0 0.188em;
+  }
+  label.gfield_label+div.ginput_container {
+    margin-top: 0;
+  }
+  .gfield_price {
+    width: 30%;
+    float: left;
+    .ginput_amount {
+      width: 100%;
+    }
+    @media (max-width: 1050px) {
+      width: 35%;
+    }
+    @media (max-width: 980px) {
+      width: 50%;
+    }
+  }
+  #field_1_15 {
+    clear: none;
+  }
+  // make everything font-size-based line up
+  // This affects styles the modify its percentages
+  ul {
+    font-size: 19.55px;
+  }
+  // make the radio buttons look like real buttons
+  ul.gfield_radio {
+    position: relative;
+    top: 37px;
+    left: 20px;
+    li {
+      display: inline;
+      margin-right: 12px;
+      float: left;
+      width: auto;
+      input {
+        display: none;
+      }
+      label {
+        padding: 8px 24px;
+        margin: 0;
+        background-color: @blue;
+        font-size: 18px;
+        font-family: @sansFontFamily;
+        color: #fff;
+      }
+      input[type=radio]:checked+label {
+        background-color: @orange;
+        font-weight: 500;
+      }
+      @media (max-width: 500px) {
+        margin-right: 8px;
+      }
+    }
+    @media (max-width: 980px) {
+      clear: both;
+      top: 0;
+      left: 0;
+    }
+  }
+  .ginput_container_address,
+  .gfield_total,
+  .ginput_container_creditcard {
+    margin-bottom: 0.875em;
+  }
+  .gfield_price_1_20,
+  .gfield_total {
+    width: 100%;
+    .gfield_label {
+      font-family: @sansFontFamily;
+      font-size: 24px;
+    }
+  }
+  .gform_button[type=submit] {
+    padding: 12px 36px;
+    background-color: @orange;
+    color: #fff;
+    font-family: @sansFontFamily;
+    border: none;
+    font-size: 21px;
+    font-weight: bold;
+  }
+
+  // try to set the height of dropdown menus to match text fields
+  &.gf_browser_chrome .ginput_complex .ginput_right select,
+  &.gf_browser_chrome .ginput_complex select {
+    height: 41px;
+    margin-bottom: 0 !important;
+  }
+  &.gf_browser_chrome .gfield_checkbox li input[type=checkbox] {
+    margin-top: 0.25em;
+  }
+  @media (max-width: 480px) {
+    .gf_name_has_2 span,
+    .ginput_complex .ginput_right,
+    .ginput_complex .ginput_left,
+    .ginput_complex .ginput_cardinfo_left {
+      width: 100% !important;
+    }
+    ul.gfield_radio li {
+      display: block;
+      clear: both;
+      float: none;
+      text-align: center;
+    }
+    .gfield_price,
+    .top_label input.medium {
+      width: 97.5%;
+    }
+    div.ginput_container_name span {
+      margin-right: 0;
+      padding-right: 0;
+    }
+    .ginput_complex .ginput_right {
+      margin-left: 0;
+    }
+    .ginput_complex .ginput_cardinfo_left {
+      margin-right: 0;
+    }
+  }
+}
