@@ -2,7 +2,7 @@
 
 Example form: https://inn.org/donate/
 
-- configurable donation amount
+- donor-configurable donation amount
 - option to have one-time donation or monthly recurring or annual recurring
 - collects personal information:
 	- first and last names
