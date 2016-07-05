@@ -74,6 +74,13 @@ add_filter( 'body_class', function( $classes ) {
 	<div id="page" class="hfeed clearfix">
 
 		<?php
+			echo '<a itemprop="url" class="alignright visible-desktop" id="page-clean-gohome" href="' . esc_url( home_url( '/' ) ) . '">';
+			echo __( 'Back to', 'largo' ) . ' ';
+			bloginfo( 'name' ); // Add the blog name.
+			echo '</a>';
+		?>
+
+		<?php
 			/**
 			 * Largo/partials/largo-header.php
 			 *
@@ -87,12 +94,6 @@ add_filter( 'body_class', function( $classes ) {
 				echo '<a itemprop="url" href="' . esc_url( home_url( '/' ) ) . '"><img class="header_img" style="max-width: 208px;" src="' . of_get_option('banner_image_med') . '" alt="" /></a>';
 			?>
 		</header>
-			<?php
-				echo '<a itemprop="url" class="alignleft visible-desktop" id="page-clean-gohome" href="' . esc_url( home_url( '/' ) ) . '">';
-				echo __( 'Back to', 'largo' ) . ' ';
-				bloginfo( 'name' ); // Add the blog name.
-				echo '</a>';
-			?>
 
 		<div id="main" class="row-fluid clearfix">
 
