@@ -4,11 +4,29 @@ This repository contains a number of forms, saved as `.json` files, and `.md` do
 
 The `.json` files can be imported to Gravity Forms, if you have the following plugins also enabled:
 
-- Gravity Forms Add Subtotal Merge Tag (This is an INN project)
-- Gravity Forms MailChimp Add-On
-- Gravity Forms Stripe Add-On
+- [Gravity Forms Add Subtotal Merge Tag](https://github.com/INN/gravity-forms-add-subtotal-merge-tag) (This is an INN fork of [Subtotal Merge Tag](http://gravitywiz.com/subtotal-merge-tag-for-calculations/))
+- [Gravity Forms MailChimp Add-On](http://www.gravityforms.com/add-ons/mailchimp/) (requires Gravity Forms Business license or better)
+- [Gravity Forms Stripe Add-On](http://www.gravityforms.com/add-ons/stripe/) (requires Gravity Forms Developer license or better)
 
-## Copying files
+Forms are saved in this repository as `form-{name}.json`, with accompanying documentation in `form-{name}.md`. For form-specific installation instruction, please see the form's `.md` file.
+
+## Preparing child themes for compatibility with forms
+
+The default styles provided with Gravity Forms don't match well with Largo's form styles. For convenience, this repository contains some LESS styles that can be integrated with a Largo child theme, and a "clean page" template for displaying the form on.
+
+### Boilerplate code features
+
+- LESS files
+	- Selected radio-button inputs are styled as normal buttons
+	- Form sizes are made uniform
+	- Largo color and font variables are inherited
+- page-clean.php
+	- minimalist, centered header
+	- no sidebars
+	- Largo single-column layout
+	- complete footer
+
+### Setup instructions
 
 1. Copy the LESS and PHP files into your child theme:
 	- [ ] `less/*`
