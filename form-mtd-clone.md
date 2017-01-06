@@ -2,6 +2,8 @@
 
 Example form: https://mississippitoday.org/mississippians-together-annual-fund/
 
+Importable JSON: https://github.com/INN/gravity-forms-donate-boilerplate/blob/master/form-mtd-clone.json
+
 - fixed monthly donation amounts, with the option for custom monthly or one-time contributions
 - collects personal information:
 	- first and last names
