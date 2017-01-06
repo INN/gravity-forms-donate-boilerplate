@@ -2,7 +2,7 @@
 
 Example form: https://inn.org/donate/
 
-Importable JSON: https://github.com/INN/gravity-forms-donate-boilerplate/blob/master/form-inn-clone.json
+Importable JSON: https://raw.githubusercontent.com/INN/gravity-forms-donate-boilerplate/master/form-inn-clone.json
 
 - donor-configurable donation amount
 - option to have one-time donation or monthly recurring or annual recurring
