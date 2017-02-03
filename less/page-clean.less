@@ -1,10 +1,23 @@
-.page-template-page-clean header.text-align-center {
-  margin-top: 10px;
-  text-align: center;
+.page-template-page-clean {
+  header.text-align-center {
+    margin-top: 10px;
+    text-align: center;
+  }
+  header img.header_img {
+    max-width: 600px;
+    @media (max-width: 700px) {	 
+	  max-width: 90%;
+	}
+  }
 }
-body.normal.page-template-page-clean article.page > header.entry-header {
-  margin: 24px 0;
-  text-align: center;
+body.normal.page.page-template-page-clean article.page > header {
+  &.entry-header {
+    margin: 24px 0;
+    text-align: center;
+  }
+  h1 {
+    padding-top: 0;
+  }
 }
 
 #page-clean-gohome {
