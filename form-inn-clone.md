@@ -25,7 +25,7 @@ Importable JSON: https://raw.githubusercontent.com/INN/gravity-forms-donate-boil
 	- `example.org/wp-admin/admin.php?page=gf_export&view=import_form`
 	- Dashboard > Forms > Import/Export > Import Forms.
 3. Upload the form.
-4. If you did not edit the form when it was a `.json` file, edit it now in the Gravity Forms admin.
+4. If you did not edit the form when it was a `.json` file, edit it now in the Gravity Forms admin. Make sure to update your email addresses.
 5. Place the shortcode for the form on a page and check the appearance. If you are using Largo, [install the LESS and PHP files from this repository](./README.md) to the child theme.
 
 ## Shortcode
