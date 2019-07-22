@@ -4,9 +4,9 @@ This repository contains a number of forms, saved as `.json` files, and `.md` do
 
 The `.json` files can be imported to Gravity Forms, if you have the following plugins also enabled:
 
-- [Gravity Forms Add Subtotal Merge Tag](https://github.com/INN/gravity-forms-add-subtotal-merge-tag) (This is an INN fork of [Subtotal Merge Tag](http://gravitywiz.com/subtotal-merge-tag-for-calculations/))
+- [Gravity Forms eCommerce Fields](https://gravitywiz.com/documentation/gravity-forms-ecommerce-fields/), an official plugin replacing INN's former [Gravity Forms Add Subtotal Merge Tag](https://github.com/INN/gravity-forms-add-subtotal-merge-tag).
 - [Gravity Forms MailChimp Add-On](http://www.gravityforms.com/add-ons/mailchimp/) (requires Gravity Forms Business license or better)
-- [Gravity Forms Stripe Add-On](http://www.gravityforms.com/add-ons/stripe/) (requires Gravity Forms Developer license or better)
+- [Gravity Forms Stripe Add-On](http://www.gravityforms.com/add-ons/stripe/) (requires Gravity Forms Developer license or better) - this boilerplate uses Stripe, but you could edit the forms to use PayPal instead.
 
 Forms are saved in this repository as `form-{name}.json`, with accompanying documentation in `form-{name}.md`. For form-specific installation instruction, please see the form's `.md` file.
 
